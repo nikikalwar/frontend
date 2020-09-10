@@ -45,3 +45,41 @@ console.log(Boolean(isNotANumber));
 console.log(typeof(NaN));//apparently Nan is a type number
 var isNull="NULL";
 console.log(typeof(isNull));
+
+
+//objects
+
+//collection of name-value pairs
+var myName={1:"Chris"};
+console.log(typeof(myName));
+var myObject=new Object();
+myObject['1']="Chris";
+myObject['2']="Sally";
+myObject['3']="bob";
+
+console.log(myObject);
+
+var myOtherObject={
+  1:"Chris",
+  2:"Sally",
+  3:"Jane",
+};
+console.log(myOtherObject);
+
+myOtherObject['6']="Ashley";
+var anotherObject={
+  firstName:"Chris",
+  lastname:"Smith",
+  age:50,
+  phone:"555-55-55555",
+  numbers:{
+    mobile:"5555555-1234",
+    home:"5555-5555",
+  },
+  address:"123 Fake St.",
+}
+console.log(anotherObject);
+console.log(anotherObject.numbers.mobile);
+console.log(anotherObject.numbers["mobile"]);
+//with an object the key provided should be unique
+ 
