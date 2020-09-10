@@ -83,3 +83,34 @@ console.log(anotherObject.numbers.mobile);
 console.log(anotherObject.numbers["mobile"]);
 //with an object the key provided should be unique
  
+var donut={
+    type:"coconut",
+    glazed:true,
+    sweetness:8,
+    hasChocolate:false,
+    sayType:function(){
+      console.log("type is "+ this.type);
+    },
+  }
+  
+  
+  //constructor pattern for creating objects
+  
+  function DonutConstructor(type,glazed,sweetness,hasChocolate){
+    this.type=type;
+    this.glazed=glazed;
+    this.sweetness=sweetness;
+    this.hasChocolate=hasChocolate;
+    this.sayType=function(){
+      ("Type:"+ this.type);
+  };
+    this.showSweetness=function(){
+      console.log("Sweetness"+ this.sweetness+"/10");
+    };
+  }
+  
+  var newCo=new DonutConstructor("coconut",false,8,true);
+  
+  console.log(newCo);
+
+  
