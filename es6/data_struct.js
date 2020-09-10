@@ -113,4 +113,66 @@ var donut={
   
   console.log(newCo);
 
-  
+  console.log(newCo);
+  console.log(newCo.sayType="false");
+  console.log(newCo);//the object value was mutuated simply by reassigning the value
+
+//Arrays
+//collection of data
+var myArray=[1,2,3,"adbkandkjnk","hdfihaskhdf"];
+console.log(myArray.length);//6
+
+
+//Arrays
+//collection of data
+var myArray=[1,2,3,"adbkandkjnk","hdfihaskhdf"];
+console.log(myArray.length);//6
+
+var myArray=new Array();
+myArray[0]="Chris";
+myArray[1]="Niki";
+console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray[50]);//returns undefined
+
+var myNames=[""];
+console.log(typeof(myNames));//apparently when we are declaring
+//it is getting typed to object any reason why??
+
+var myNames=["chris","Jessica","John"]
+console.log(typeof(myNames));
+//so declaring quotation marks in inside an array why does it gives objects
+
+var myArray = [""];
+console.log(Boolean(typeof(myArray) === Object));
+console.log(typeof(myArray));
+
+//some more practise on arrays
+
+var myNames=[""];
+console.log(typeof(myNames));//apparently when we are declaring
+//it is getting typed to object any reason why??
+
+var myNames=["chris","Jessica","John"]
+console.log(typeof(myNames));
+//so declaring quotation marks in inside an array why does it gives objects
+var poppedElement=myNames.pop();
+console.log(poppedElement);
+console.log(myNames);//prints popped out element
+myNames.push("NIKI");
+console.log(myNames);//prints pushed element to the array
+
+
+var myArray = [""];
+console.log(Boolean(typeof(myArray) == 'object'));//checking for object
+console.log(typeof(myArray));//object
+var myNullObject=new Object();
+console.log(typeof(myNullObject));
+
+
+
+
+
+
+
