@@ -40,6 +40,16 @@ sayHi();
 
 */
 
+var squaredNumber = function(num) {
+    return num*num;
+}
+
+var numberAdder=function(num1,num2){
+    return num1+num2;
+}
+
+console.log(numberAdder(squaredNumber(5),10)); //outputs 35
+
 
 
 
