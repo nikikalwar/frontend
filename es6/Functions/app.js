@@ -18,8 +18,35 @@ const billy="Billy";
 sayHi("Niki");
 sayHi(billy,20);
 */
-
+/*
 function doDouble(num){
     return num*2;
 }
 console.log(doDouble(20));
+//const num1=doDouble(30);
+*/
+
+//const myName="";
+/*
+function sayHi(){
+    if(!myName){
+        var myName="Bob";
+    }
+    console.log
+}
+const myName="Niki";//due to hoisting the variables are initialized with undefined variable
+
+sayHi();
+
+*/
+
+
+
+
+
+
+
+
+
+
+
