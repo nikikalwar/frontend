@@ -230,7 +230,32 @@ function logAllArguments(x, ...nums){
 logAllArguments(10,1,4,2,6,8);
 
 */
-
+/*
+function Dog(years, breed){
+    this.age=years;
+    this.type=breed;
+    console.log(this);//prints the instance of Dog
+}
+const spike=new Dog(3,"Golden Retriever");//the above function behaves as a constructor
+const fido=new Dog(4,"Husky");//we can't use arrow functions because it will give us Dog is not a contructor error
+console.log(spike);
+/*Dog { age: 3, type: 'Golden Retriever' }
+Dog { age: 4, type: 'Husky' }
+Dog { age: 3, type: 'Golden Retriever' }
+*/
+//eg of this keeps changing and how to address this issue
+function Dog(years, breed){
+    const that=this;
+    that.age=years;
+    that.type=breed;
+   /* setInterval(function(){
+        console.log(this);//captures the immediate function
+    },1000) */
+    console.log(that);//prints the instance of Dog
+}
+const spike=new Dog(3,"Golden Retriever");//the above function behaves as a constructor
+const fido=new Dog(4,"Husky");//we can't use arrow functions because it will give us Dog is not a contructor error
+console.log(spike);
  
 
 
