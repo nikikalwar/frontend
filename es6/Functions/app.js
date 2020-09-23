@@ -188,6 +188,32 @@ console.log(intialString);
 
 */
 
+//checking out some more usage of functions
+/*
+const bankAccount={
+    canSpend:true,
+    balance:100
+}
+
+function purchaseItem(price,acct=bankAccount){
+    if(price>acct.balance){
+        acct.canSpend=false;
+  
+    }
+        if(acct.canSpend===true){
+            acct.balance-=price;
+            console.log("you have made the purchase");
+            console.log("your current balance is"+acct.balance);
+        }
+        else console.log("you cannot make the purchase");
+        
+}
+purchaseItem(99);
+purchaseItem(11);
+purchaseItem(101);
+
+*/
+
 
 
  
