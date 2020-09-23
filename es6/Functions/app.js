@@ -214,7 +214,22 @@ purchaseItem(101);
 
 */
 
+//grab all parameters.
+/*
+function logAllArguments(x,y,z){
+    console.log(arguments);
+}
+logAllArguments(4,5,6);//[Arguments] { '0': 4, '1': 5, '2': 6 }
+*/
+//usage of spread operator
+/*
+function logAllArguments(x, ...nums){
+    console.log(nums.sort());//prints the sorted number
+}
 
+logAllArguments(10,1,4,2,6,8);
+
+*/
 
  
 
