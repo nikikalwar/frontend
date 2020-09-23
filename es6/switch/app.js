@@ -85,3 +85,30 @@ High range
 out of range
 */
 
+//another example
+//last example on switch statements
+const donutPicker=(flav)=>{
+    switch(flav){
+        case 's':
+            return "sprinkles";
+            case 'c':
+                return "chocolate glazed";
+                case 'b':
+                    return "bear claw";
+                    default:
+                        return ;
+    }
+}
+
+const donuts=(selection)=>{
+    const selectedDonut=donutPicker(selection);
+    if(!selectedDonut){
+        console.log("not a proper selection");
+    }
+    else console.log("You have selected "+selectedDonut);
+}
+
+donuts('s');
+donuts('aa');
+donuts('b');
+
