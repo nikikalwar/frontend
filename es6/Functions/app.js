@@ -93,6 +93,44 @@ console.log(myNumbers);//outputs changed array
 
 */
 
+//nested functions
+/*
+function squareAndMultiply(num1,num2){
+    function squarer(x){
+        return x*x;
+    }
+    function multiply(num1,num2){
+        return num1*num2;
+    }
+    return squarer(num1)+multiply(num1,num2);
+}
+
+console.log(squareAndMultiply(2,4));
+console.log(squareAndMultiply(6,6));
+*/
+
+function nameFormatter(firstName,lastName,age){
+    function formatNames(arg1,arg2){
+            return arg1+" "+arg2;
+    }
+
+    
+    function dataFormatter(fullname,num){
+        const formattedData={
+            name:fullname,
+            age:num
+        }
+        return formattedData;
+    }
+    const formattedName=formatNames(firstName,lastName);
+    return dataFormatter(formattedName,age);
+
+}
+
+console.log(nameFormatter("chris","Jones",20));
+
+
+
 
 
 
