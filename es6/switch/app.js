@@ -43,3 +43,45 @@ switch(myFruit){
             console.log("anything is fine");
 }
 */
+/*
+function numChecker(num){
+    switch(num){
+        case 0:
+            case 1:
+                case 2:
+                    case 3:
+                        console.log("Low range number");
+                        break;
+
+        case 4:
+            case 5:
+                case 6:
+                    console.log("Mid range ");
+                    break;
+
+        case 7:
+            case 8:
+                case 9:
+                    case 10:
+                        console.log("High range");
+                        break;
+
+        default:
+            console.log("out of range");
+            break;
+    }
+
+}
+
+numChecker(1);
+numChecker(5);
+numChecker(9);
+numChecker("2");
+
+/*output
+Low range number
+Mid range 
+High range
+out of range
+*/
+
