@@ -26,12 +26,14 @@ else if (myFruit==="orange"){
 
 else console.log("anthing is fine");
 */
-
-const myFruit="apple";
-
+/*
+//so the point here is if different cases are present or stacked together , if any of the cases are true the next statement will be executed
+const myFruit="banana";
 switch(myFruit){
     case "apple":
-        console.log("Great! I love apples.");
+        case "banana":
+            case "orange":
+        console.log("Great! I love banana.");
         break;
     case "oranges":
         console.log("Oranges are great");
@@ -40,3 +42,4 @@ switch(myFruit){
         default:
             console.log("anything is fine");
 }
+*/
