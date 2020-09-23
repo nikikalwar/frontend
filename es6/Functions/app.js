@@ -18,3 +18,8 @@ const billy="Billy";
 sayHi("Niki");
 sayHi(billy,20);
 */
+
+function doDouble(num){
+    return num*2;
+}
+console.log(doDouble(20));
