@@ -10,6 +10,10 @@ function sayHi(userName){
     console.log("Hi "+userName);
 
 }
-
+function addSum(a,b){
+    console.log(a+b);
+}
+addSum(5,6);
+const billy="Billy";
 sayHi("Niki");
-sayHi("Billy");
+sayHi(billy);
