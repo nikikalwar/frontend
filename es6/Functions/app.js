@@ -4,10 +4,10 @@
 "A function is a javascript procedure - a set of statements that performs a task or calculates a value.[...]";
 --Mozilla develeoper network
 */
+/*
 
-
-function sayHi(userName){
-    console.log("Hi "+userName);
+function sayHi(userName,age){
+    console.log("Hi "+userName+"age is "+age);
 
 }
 function addSum(a,b){
@@ -16,4 +16,5 @@ function addSum(a,b){
 addSum(5,6);
 const billy="Billy";
 sayHi("Niki");
-sayHi(billy);
+sayHi(billy,20);
+*/
