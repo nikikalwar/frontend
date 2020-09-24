@@ -1,0 +1,16 @@
+body{
+    background-color:grey;
+   
+}
+main h1{
+    background-color:blue;
+}
+
+main section h1{
+    background-color:red;
+}
+/* cascading and how to select different tags */
+
+main p{
+    background-color:white;
+}
