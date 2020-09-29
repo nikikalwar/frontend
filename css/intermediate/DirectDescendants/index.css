@@ -1,0 +1,13 @@
+body{
+    background-color:lightblue;
+}
+
+
+main article img {
+    width:500px;
+    height:auto;
+}
+
+section >div >h4{
+    color:yellow;
+}
