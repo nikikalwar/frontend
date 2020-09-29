@@ -1,0 +1,18 @@
+body{
+    background-color:lightblue;
+}
+
+
+main article img {
+    width:500px;
+    height:auto;
+}
+
+.example-div{
+    background-color:blue;
+    color:yellow;
+}
+section >.example-div{
+    background-color:blue;
+    color:yellow;
+}
