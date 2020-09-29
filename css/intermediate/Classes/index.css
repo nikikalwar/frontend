@@ -16,3 +16,7 @@ section >.example-div{
     background-color:blue;
     color:yellow;
 }
+
+div.green-background{
+    background-color:green;
+}
