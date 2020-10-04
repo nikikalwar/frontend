@@ -256,6 +256,8 @@ function Dog(years, breed){
 const spike=new Dog(3,"Golden Retriever");//the above function behaves as a constructor
 const fido=new Dog(4,"Husky");//we can't use arrow functions because it will give us Dog is not a contructor error
 console.log(spike);
+
+
  
 
 
