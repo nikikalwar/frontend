@@ -1,3 +1,4 @@
+
 body{
     position:relative;
     background-color:lightgrey;
@@ -6,11 +7,17 @@ body{
 .page-title{
     background-color:#252a2f;
     padding:20px;
+    font-family: 'Times New Roman', Times, serif;
+
 }
 #page-description{
    /* padding:20px; */
     color:white;
     text-align:center;
+}
+h1{
+    font-family: 'myFont', Times, serif;
+
 }
 .center{
     display:block;
@@ -35,8 +42,13 @@ body{
    
 }
 
+ol{
+    list-style-type: upper-roman;
+}
 
-
+ul{
+    list-style-type:none ;
+}
 
 /*The css border style property specifies what kinds of border to display. */
 
