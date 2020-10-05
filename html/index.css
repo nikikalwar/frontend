@@ -1,15 +1,19 @@
 body{
-    background-color:rgb(25, 187, 241); 
+    background-color:lightgrey;
 }
 
-h1{
-    font-size:20px;
-    
+.page-title{
+    background-color:;
 }
-
-ul{
+#page-description{
     padding:20px;
+    color:orange;
+    text-align:center;
 }
+
+
+
+
 
 /*The css border style property specifies what kinds of border to display. */
 
