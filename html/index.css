@@ -50,6 +50,23 @@ ul{
     list-style-type:none ;
 }
 
+.intro >span{
+    font-style: italic;
+}
+
+
+.last{
+    text-decoration:underline;
+}
+
+.first{
+    font-style:normal;
+}
+
+.intro .first{
+    font-style:normal;
+    color:red;
+}
 /*The css border style property specifies what kinds of border to display. */
 
 /*
@@ -59,5 +76,6 @@ solid--defines a solid border
 double-defines a double border
 
 */
+
 
 
