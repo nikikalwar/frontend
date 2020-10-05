@@ -1,0 +1,81 @@
+
+body{
+    position:relative;
+    background-color:lightgrey;
+}
+
+.page-title{
+    background-color:#252a2f;
+    padding:20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#page-description{
+   /* padding:20px; */
+    color:white;
+    text-align:center;
+}
+h1{
+    font-family: 'myFont', Times, serif;
+
+}
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+    height:25%;
+    padding:10px;
+    border:10px;
+}
+
+.Img1{
+    text-align:left;
+    
+}
+.step-1{
+    text-align:left;
+    color:rgb(14, 12, 14);
+    margin-left:auto;
+    padding:2px;
+   
+   
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style-type:none ;
+}
+
+.intro >span{
+    font-style: italic;
+}
+
+
+.last{
+    text-decoration:underline;
+}
+
+.first{
+    font-style:normal;
+}
+
+.intro .first{
+    font-style:normal;
+    color:red;
+}
+/*The css border style property specifies what kinds of border to display. */
+
+/*
+dotted--defines a dotted border
+dashed --defines a dashed border
+solid--defines a solid border
+double-defines a double border
+
+*/
+
+
+
