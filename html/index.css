@@ -1,16 +1,39 @@
 body{
+    position:relative;
     background-color:lightgrey;
 }
 
 .page-title{
-    background-color:;
+    background-color:#252a2f;
+    padding:20px;
 }
 #page-description{
-    padding:20px;
-    color:orange;
+   /* padding:20px; */
+    color:white;
     text-align:center;
 }
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+    height:25%;
+    padding:10px;
+    border:10px;
+}
 
+.Img1{
+    text-align:left;
+    
+}
+.step-1{
+    text-align:left;
+    color:rgb(14, 12, 14);
+    margin-left:auto;
+    padding:2px;
+   
+   
+}
 
 
 

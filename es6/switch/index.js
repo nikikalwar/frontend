@@ -103,7 +103,7 @@ function timeAdder(value1,label1,value2,label2){
                 }
             
 
-
+            }
 timeAdder(5,"minutes",8,"minutes")
 timeAdder(5,"hours",6,"hours");
 timeAdder(5,"seconds",5,"minutes");
