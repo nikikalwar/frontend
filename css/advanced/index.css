@@ -14,6 +14,10 @@ body{
 #list-of-steps li:first-child{
  color:red;
 }
+
+.Img1:hover{
+filter:invert(100%);
+}
 /*
 
 #CSS Specifity
