@@ -4,6 +4,16 @@ body{
     background-color:lightgrey;
 }
 
+.page-title{
+    background-color:black;
+}
+#page-description{
+    color:white;
+}
+
+#list-of-steps li:first-child{
+ color:red;
+}
 /*
 
 #CSS Specifity
