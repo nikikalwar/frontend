@@ -1,0 +1,17 @@
+
+body{
+    position:relative;
+    background-color:lightgrey;
+}
+
+/*
+
+#CSS Specifity
+
+0.Type selectores(e.g h1,div,header,p)
+1.class-selectors (e.g. .example-class)
+2.ID selectors (e.g..)
+
+Sometimes we might face with precedence
+
+*/
