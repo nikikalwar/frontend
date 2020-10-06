@@ -14,9 +14,14 @@ body{
 #list-of-steps li:first-child{
  color:red;
 }
-
+/* hover
 .Img1:hover{
 filter:invert(100%);
+transform:scale(2);
+}
+*/
+.intro span+span{
+ color:red;
 }
 /*
 
