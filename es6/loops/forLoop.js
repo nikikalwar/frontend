@@ -51,4 +51,52 @@ for(let i=0;i<10;i++){
 }
 */
 
+/* this will give the i value as 10 since we have declared global scope using var
+so the value is being incremented to 10 
+for(var i=0;i<10;i+=1){
+setTimeout(()=>{
+    console.log("I am being printed"+i)
+},1000)
+}
+
+*/
+
+//use let
+
+/*
+for(let i=0;i<10;i+=1){
+    setTimeout(()=>{
+        console.log("I am being printed"+i)
+    },1000)
+    }
+    
+
+    //o/p
+    I am being printed0
+I am being printed1
+I am being printed2
+I am being printed3
+I am being printed4
+I am being printed5
+I am being printed6
+I am being printed7
+I am being printed8
+I am being printed9
+
+*/
+/* using var but using closures */
+/*
+function looper(value){
+    setTimeout(()=>{
+        console.log(value);
+    },3000)
+}
+
+for(var i=0;i<10;i++){
+    looper(i);
+}
+
+//issue resolved without using let
+*/
+
 
