@@ -1,0 +1,17 @@
+
+#rectangleWrapper{
+    
+        padding: 50px 50px 0px 50px;
+        border-style: groove;
+        margin:5px;
+      }
+body{
+    background-color: cadetblue;
+}
+
+h2{
+    text-align:center 
+}
+
+
+
