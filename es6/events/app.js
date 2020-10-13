@@ -49,7 +49,7 @@ function switchBackground(e) {
 }
 greenBackground.addEventListener("click",green);  
 function green(e) {
-   // e.stopPropagation();
+    e.stopPropagation();
     if(e.type==="click"){
         greenBackground.classList.add("green-background");
         console.log(background);
