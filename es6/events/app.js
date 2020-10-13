@@ -40,7 +40,9 @@ function logEvent(e){
 
   background.addEventListener("click",switchBackground);  
 function switchBackground(e) {
+    e.stopPropagation();
     if(e.type==="click"){
+      
         background.classList.add("background-color");
         console.log(background);
 
@@ -49,12 +51,14 @@ function switchBackground(e) {
 }
 greenBackground.addEventListener("click",green);  
 function green(e) {
-    e.stopPropagation();
+  e.stopPropagation();
     if(e.type==="click"){
-        greenBackground.classList.add("green-background");
-        console.log(background);
-        greenBackground.removeEventListener("click",green);
+        e.target.classList.add("green-background");
+        //console.log(greenBackground);
+        console.log(e.target);
+       
     }
+   // greenBackground.removeEventListener("click",green);
 
 }
 
