@@ -59,6 +59,7 @@ function green(e) {
        
     }
    // greenBackground.removeEventListener("click",green);
+//stop propagation to other sections and the scope is limited to that particular section
 
 }
 
