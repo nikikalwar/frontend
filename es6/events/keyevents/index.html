@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+       
         <meta charset="utf-8">
         <meta name="viewport" content="width">
         <title>JS bin</title>
@@ -14,6 +15,17 @@
                 border:1px solid black;
             }
         </style>
+         <script>
+            document.addEventListener("DOMContentLoaded",addList)
+            function addList(){
+                const myLog=document.querySelector("#para1");
+                myLog.innerHTML="Hello there";    
+                console.log("dom-content-loaded")
+                //  if(document.addEventListener("DOMContentLoaded")===true)
+                  
+            }
+        </script>
+       
     </head>
 
     <body>
@@ -39,9 +51,9 @@
             </form>
         </div>
         <div id="div3">
-            <p>User is typing</p>
+            <p id="para1">User is typing</p>
             <textarea></textarea>
         </div>
-        <script src="app.js"></script>
+       
     </body>
 </html>
