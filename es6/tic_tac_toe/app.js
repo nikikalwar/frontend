@@ -2,82 +2,97 @@ let gridItem=document.querySelectorAll(".grid-item");
 console.log(gridItem);
 let count=0;
 for(let i=0;i<9;i++){
+    if(i<9){
     gridItem[i].addEventListener("click",markXY);
+
     console.log(gridItem[i])
+    }
+   // else document.addEventListener("click",gameOver);
 }
 let str=[];
 function markXY(e){
     count++;
-    if(count>9){
-        
-      //  console.log(str);
-      gameOver();
-    }
-    console.log(e.target.id);
+    console.log(e.target.id[e.target.id.length-1]);
+   
     e.stopPropagation();
     const target=document.querySelector("#"+e.target.id);
     console.log(target);
     const h1=document.createElement("h1");
     h1.classList="h1-class";
-    if(count%2==0)
-    h1.innerHTML="O";
-    else 
-    h1.innerHTML="X";
-   // str+=h1.innerHTML;
+    console.log(h1);
    target.appendChild(h1);
-   if(count==9){
+    if(count%2==0)
+    {  str[e.target.id[e.target.id.length-1]]="O";
+    h1.textContent="O";
+}
+    else {
+        str[e.target.id[e.target.id.length-1]]="X";
+        h1.innerHTML="X";
+    }
+   
+   // str+=h1.innerHTML;
+  
+   if(count>=3)
             winner();    
-       
-   }
  
 }
 
 //logic to check if someone one
 let win_1=document.querySelector("#dis-win");
 function winner(){
+    console.log(count);
     const h1_text=document.querySelectorAll(".h1-class"); 
  //  console.log(h1_text);
-    for(let i=0;i<9;i++){
-        str[i]=h1_text[i].textContent;
-            console.log(str[i]);
-    }
+ 
+   // }
     //check condition for winner
     //x-012,345
  //1st part for all rows
-    for(let i=0;i<9;i=i+3){
+
+    for(let i=1;i<=count;i=i+3){
          // str1=str[i];    
         // console.log(i);
-      if(str[i]===str[i+1]&&str[i+1]===str[i+2]){
+      if(str[i]===str[i+1]&&str[i+1]===str[i+2] &&typeof str[i]!=='undefined'){
               win_1.textContent=`Player ${str[i]} has won`;
+              console.log("this part is having issue");
+                gameOver();
              }
          }
 
          //2nd part for all columns
-        for(i=0;i<3;i++){
-            if(str[i]==str[i+3]&&str[i+3]===str[i+6]){
-               win_1.textContent=`Player ${str[i]} has won`
+         
+        for(let i=1;i<=3;i++){
+            if(str[i]===str[i+3]&&str[i]===str[i+6] && typeof str[i]==="string"){
+               win_1.textContent=`Player ${str[i]} has won`;
+             //  console.log("this part is having issue");
+               gameOver();
             }
         }
 
         //3rd part for all diagonal elements
-        if(str[0]===str[4] && str[4]===str[8] )
+        if(str[1]===str[5] && str[5]===str[9] && typeof str[1]==="string")
         {
-           win_1.textContent=`Player ${str[i]} has won`
+           win_1.textContent=`Player ${str[1]} has won`;
+           gameOver();
         }
-        else if(str[2]===str[4] && str[4]===str[6] )
+         if(str[3]===str[5] && str[5]===str[7] && typeof str[3]==="string" )
         {
-           win_1.textContent=`Player ${str[i]} has won`
+           win_1.textContent=`Player ${str[3]} has won`;
+           gameOver();
         } 
         
-        else if(win_1.textContent==="Game is on"){
-            win_1.textContent="Nobody won ,let's try again"
+        else if(win_1.textContent==="Game is on" &&count>9){
+            win_1.textContent="Nobody won ,let's try again";
+            gameOver();
         }
+       
 
 }
 
 function gameOver(){
-    alert("Game over");
-    location.reload();
+    setTimeout(function(){ alert("Game over"); }, 2000);
+    console.log("Game over");
+   // location.reload();
 }
 
 
