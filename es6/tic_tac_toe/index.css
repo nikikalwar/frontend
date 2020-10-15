@@ -4,6 +4,7 @@
     background-color:solid rgb(10, 250, 82);
     padding: 10px;
     margin-top:auto;
+    opacity: 50%;
   }
 
   .grid-item {
@@ -16,7 +17,14 @@
 
   }
   body{
-      background-color: cornflowerblue;
+      background-image:url("cool-background (2).png")
+
   }
 
-  
+  h2 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px;
+    font-style: italic;
+    
+  }
+ 
