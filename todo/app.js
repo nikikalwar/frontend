@@ -8,7 +8,7 @@ signup.addEventListener("click",goToPageSignup);
 
 function goToPageLogin(e){
    // console.log(e.target.classList);
-   window.location.href="http://www.w3schools.com";
+   window.location.href="login.html";
     
 }
 

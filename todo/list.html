@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+  <title>To-do-list</title>
+        <link rel="stylesheet" type="text/css" href="list.css">
+    </head>
+    <body style="background-color: rgb(212, 212, 212)">
+        <div class="row" id="page-des" style="background-color: rgb(212, 212, 212);">
+            <div class="column">
+                <h2>Settings</h2>
+            </div>
+
+            <div class="column">
+                <h1>TO-DO</h1>
+            </div>
+            <div class="column" >
+                <h2 style="text-align: right; margin:10px 10px 2px 2px">logout</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="grid-container">
+            <div id="date-section" class="grid-item">
+                <p id="date-p" style="text-align: center;"></p>
+            </div>
+            <div class="grid-item" style=" text-align: center;">
+                <input type="submit" value="add-task" id="add-task">
+            </div>
+        </div>
+        <hr>
+        
+        <div id="list-items" class="grid-item" style="border:2px solid black">
+            <p><em>This is a sample list item</em></p>
+        </div>
+
+        <div id="list-items" class="grid-item" style="border:2px solid black">
+            <p><em>This is a sample list item</em></p>
+        </div>
+        
+       </div>
+        <script src="list.js"></script>
+    </body>
+</html>

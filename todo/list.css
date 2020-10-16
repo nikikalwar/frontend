@@ -1,0 +1,32 @@
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex:auto;
+  }
+
+  hr{
+      border:2px solid black;
+  }
+
+  .grid-container{
+    grid-gap: 10px;
+  }
+
+  #add-task{
+    height: 100%;
+    width:25%;
+
+  }
+
+  #list-items{
+    padding:2px;
+    margin:2px;
+    height:auto;
+    
+  }
+
+#list-items p{
+  text-align: center;
+}
