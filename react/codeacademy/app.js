@@ -85,3 +85,71 @@ const myList=(
 ReactDOM.render(myList,document.getElementById('app'));
 
 */
+
+/*
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Write code here:
+const myDiv=(<div className="big">I AM A BIG DIV</div>)
+ReactDOM.render(myDiv,document.getElementById('app'));
+
+
+*/
+
+/*
+
+const profile = (
+  <div>
+    <h1>I AM JENKINS</h1>
+    <img src="images/jenkins.png" />
+    <article>
+      I LIKE TO SIT
+      <br />
+      JENKINS IS MY NAME
+      <br />
+      THANKS HA LOT
+    </article>
+  </div>
+);
+
+*/
+
+/* 20 Digits of Pi in JSX
+
+app.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Write code here:
+const math=<h1>2 + 3 = 2 + 3</h1>
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Write code here:
+const math=<h1>2 + 3 = {2 + 3}</h1>}
+
+
+ReactDOM.render(math,document.getElementById('app'));
+
+*/
+
+/* variable attributes in JSX 
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const goose = 'https://content.codecademy.com/courses/React/react_photo-goose.jpg';
+
+// Declare new variable here:
+const gooseImg=<img src={goose} />;
+
+ReactDOM.render(gooseImg,document.getElementById('app'));
+
+
+*/
+
