@@ -1,7 +1,8 @@
-const head=document.querySelector("head");
-//selects the head element of the page 
-const title=document.querySelector("title");
-title.innerHTML="My Site using JS";
-
-console.log(head.innerHTML);
-
+/*
+the below code saves the DOM Tree in html format 
+ var s = new XMLSerializer();
+ var d = document;
+ var str = s.serializeToString(d);
+ saveXML(str);
+*/
+//will add fetch function later
