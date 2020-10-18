@@ -20,7 +20,12 @@ console.log(date_p.innerHTML);
 
     }
 
-    console.log()
+    console.log(localStorage.getItem("mySession"));
+
+//writing the lists dynamically
+
+//rendering one list 
+
 
 
     
