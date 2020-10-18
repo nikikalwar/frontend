@@ -21,20 +21,37 @@ console.log(taskTime);
 saveList(taskItem,taskTime,taskPriority,details);
 
 }
-
+let a= localStorage.mySession;
+let c=(JSON.parse(localStorage.getItem(a))).listCount;
+c=c+1;
 function saveList(taskItem,taskTime,taskPriority,details){
     const listDetails={
-        name:taskItem,
-        time:taskTime,
+        taskName:taskItem,
+        tasktime:taskTime,
         Priority:taskPriority,
         details:details
     }
+    for(i in listDetails){
+    i.concat(""+c);
+    }
+  /*other 
+      console.log(listDetails)
+    console.log(JSON.stringify(listDetails));
     var a= localStorage.mySession;
-    console.log(a)
-  console.log( localStorage.getItem(a))
- var b=localStorage.getItem(a);
- b=b+(JSON.stringify(listDetails));
+    console.log(a.listCount);
+
+  // console.log(a);
+ console.log( localStorage.getItem(a))
+ b=localStorage.getItem(a)+JSON.stringify(listDetails);
+ b=b.replace('}{',',');
  console.log(b);
+b=(JSON.parse(b));
+console.log(b);
+
+*/
+//localStorage.setItem("list"+Math.floor(Math.random()*25),JSON.stringify(listDetails))
+ //b=b+(JSON.stringify(listDetails));
+ //console.log(b);
    // localStorage.setItem(a,JSON.stringify(listDetails));
    /* JSON.parse(localStorage.getItem(a)).push(taskTime);
     JSON.parse(localStorage.getItem(a)).push(taskPriority);
