@@ -17,7 +17,11 @@ console.log(date_p.innerHTML);
 
    function addList(e){
     window.location.href="newlist.html";
+
     }
+
+    console.log()
+
 
     
 
