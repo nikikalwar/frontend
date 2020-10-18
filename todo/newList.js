@@ -31,11 +31,15 @@ function saveList(taskItem,taskTime,taskPriority,details){
         Priority:taskPriority,
         details:details
     }
-    for(i in listDetails){
-    i.concat(""+c);
-    }
+       
+   for(prop in listDetails)
+   listDetails[prop+c]=listDetails[prop];
+     console.log(listDetails);
+  for(keys in listDetails)
+    console.log(keys);
+
   /*other 
-      console.log(listDetails)
+      
     console.log(JSON.stringify(listDetails));
     var a= localStorage.mySession;
     console.log(a.listCount);
