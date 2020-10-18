@@ -12,7 +12,21 @@ button.addEventListener("click",getFormData)
      const password=document.getElementById("myForm").elements[3].value;
      console.log(password)
      console.log(firstName);
- }
+        
+ 
+//
+//call function to store the array in a list
+let person = {
+    name: firstName,
+    nameLast: lastName,
+    email:email,
+    pass:password
+};
 
+localStorage.setItem(firstName+Math.floor(Math.random()*999), JSON.stringify(person));
+console.log(person);
+
+    // window.location.href="login.html";
+ }
 
  
