@@ -22,8 +22,7 @@ saveList(taskItem,taskTime,taskPriority,details);
 
 }
 let a= localStorage.mySession;
-let c=(JSON.parse(localStorage.getItem(a))).listCount;
-c=c+1;
+
 function saveList(taskItem,taskTime,taskPriority,details){
     const listDetails={
         taskName:taskItem,
@@ -32,34 +31,41 @@ function saveList(taskItem,taskTime,taskPriority,details){
         details:details
     }
        
+    let listVar=(JSON.parse(localStorage.getItem(localStorage.mySession)));
+    for(prop in listVar){
+        if(prop==="listCount"){
+         // ++listVar[prop];
+      console.log(listVar[prop]=listVar[prop]+1);
+      c=listVar[prop];
+        }
+    }
+  //  console.log(listVar);
+        
+    
+    console.log(c);
    for(prop in listDetails)
    listDetails[prop+c]=listDetails[prop];
      console.log(listDetails);
   for(keys in listDetails)
     console.log(keys);
-let listVar=(JSON.parse(localStorage.getItem(a)));
-    for(prop in listVar){
-        if(prop==="listCount")
-   prop=c;
-      console.log(prop);
-    }
-    
-
 
       
     console.log(JSON.stringify(listDetails));
-    var a= localStorage.mySession;
-    d=JSON.parse(localStorage.getItem(a)).listCount
-    d++;
+  //  var a= localStorage.mySession;
+   
 
   // console.log(a);
  console.log( localStorage.getItem(a))
- b=localStorage.getItem(a)+JSON.stringify(listDetails);
+ let b=JSON.stringify(listVar)+JSON.stringify(listDetails);
  b=b.replace('}{',',');
  console.log(b);
-b=(JSON.parse(b));
-console.log(b);
-localStorage.setItem(localStorage.getItem(a),b);
+localStorage.removeItem(a);
+
+           // b=(JSON.parse(b));
+          //  console.log(b);
+            localStorage.setItem(localStorage.mySession,b);
+           // localStorage.getItem(b);
+            
 
 //localStorage.setItem("list"+Math.floor(Math.random()*25),JSON.stringify(listDetails))
  //b=b+(JSON.stringify(listDetails));
