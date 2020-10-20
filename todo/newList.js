@@ -37,12 +37,20 @@ function saveList(taskItem,taskTime,taskPriority,details){
      console.log(listDetails);
   for(keys in listDetails)
     console.log(keys);
+let listVar=(JSON.parse(localStorage.getItem(a)));
+    for(prop in listVar){
+        if(prop==="listCount")
+   prop=c;
+      console.log(prop);
+    }
+    
 
-  /*other 
+
       
     console.log(JSON.stringify(listDetails));
     var a= localStorage.mySession;
-    console.log(a.listCount);
+    d=JSON.parse(localStorage.getItem(a)).listCount
+    d++;
 
   // console.log(a);
  console.log( localStorage.getItem(a))
@@ -51,8 +59,8 @@ function saveList(taskItem,taskTime,taskPriority,details){
  console.log(b);
 b=(JSON.parse(b));
 console.log(b);
+localStorage.setItem(localStorage.getItem(a),b);
 
-*/
 //localStorage.setItem("list"+Math.floor(Math.random()*25),JSON.stringify(listDetails))
  //b=b+(JSON.stringify(listDetails));
  //console.log(b);
