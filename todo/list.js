@@ -1,4 +1,15 @@
 const date_p=document.querySelector("#date-p");
+document.querySelector(".user-id").innerHTML=localStorage.getItem('mySession');
+
+const log_out=document.querySelector("#log-out");
+console.log(log_out);
+log_out.addEventListener("click",loggingOut);
+
+function loggingOut(e){
+ // location.reload();
+
+ window.location.href="login.html";
+}
 
 setInterval( function(){
     
@@ -146,7 +157,7 @@ i++;
 }
 }
 */
-   
+
 
     
 }
