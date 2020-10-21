@@ -81,3 +81,13 @@ function saveList(taskItem,taskTime,taskPriority,details){
     */
 
 }
+
+
+
+//for the back button
+
+j=document.querySelector(".go_back");
+console.log(j);
+j.addEventListener("click",myscript)
+function myscript(){window.location.href="list.html"};
+               

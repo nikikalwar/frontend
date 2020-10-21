@@ -19,8 +19,12 @@ selected_list.forEach(i=>{
 //stores the data for displaying the data on the next page
 
 function ListView(e){
-
-    console.log(e.target);
+  let id_view;
+    console.log(id_view=e.target.parentElement.parentElement.id);//gives the id of the parent-parent element
+    //will store this info so this can be used on 
+    //other pages
+    localStorage.setItem("id_view",id_view);
+    window.location.href="listdetails.html";
 
 }
 function loggingOut(e){
@@ -81,16 +85,19 @@ for(let prop in e){
 testprop=testprop+i; 
 //console.log(testprop);
 //this one checks for the name of the task
-if(testprop===prop){
+if(testTask===prop){
     
   new_task= document.createElement("div"); 
   new_task.classList="row";
+  new_task.id="taskName"+i+"";
+
+  //new_task.id="testprop"
   new_task.style="background-color: rgb(212, 212, 212) ;border:2px solid black;margin:2px;padding:2px"
- // addEventListener("click",ListView);
+  new_task.addEventListener("click",ListView);
       new_column=document.createElement("div");
       new_column.classList="column";
       new_h2=document.createElement("h2");
-      new_h2.innerHTML=(new Date()).toString().slice(4,25);//e[prop]-- for later
+      new_h2.innerHTML=e["tasktime"+i];//e[prop]-- for later
       new_column.append(new_h2);
       new_task.append(new_column);
       document.body.append(new_task);
@@ -111,13 +118,13 @@ if(testprop===prop){
               new_column.classList="column";
               new_column.style="text-align: right";
               new_h2=document.createElement("input");
-            new_h2.key="taskName"+"Input"+"";
+          
               new_h2.type="checkbox";
              new_h2.style="width:75%;height:75%;  margin:10px 10px 10px 10px;text-align: right; "> 
    
               new_column.append(new_h2);
               new_task.append(new_column);
-              addEventListener("click",ListView);
+            //  addEventListener("click",ListView);
               document.body.append(new_task);
 
       

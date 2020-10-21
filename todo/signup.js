@@ -41,8 +41,10 @@ let person = {
     listCount:0,
 };
 if(flag==1){
-let user=localStorage.setItem("user"+""+firstName+Math.floor(Math.random()*999), JSON.stringify(person));
+    let user="user"+""+firstName+Math.floor(Math.random()*999)
+localStorage.setItem(user, JSON.stringify(person));
 console.log(user);
+alert("your username is:"+user);
 
     window.location.href="login.html";
  }
