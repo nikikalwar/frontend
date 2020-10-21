@@ -31,7 +31,7 @@ function saveList(taskItem,taskTime,taskPriority,details){
         details:details
     }
        
-    let listVar=(JSON.parse(localStorage.getItem(localStorage.mySession)));
+    let listVar=(JSON.parse(localStorage.getItem(localStorage.mySession).replace(",}","}")));
     for(prop in listVar){
         if(prop==="listCount"){
          // ++listVar[prop];
@@ -39,12 +39,15 @@ function saveList(taskItem,taskTime,taskPriority,details){
       c=listVar[prop];
         }
     }
-  //  console.log(listVar);
+    console.log(listVar);
         
     
     console.log(c);
-   for(prop in listDetails)
+
+   for(prop in listDetails){
    listDetails[prop+c]=listDetails[prop];
+  delete listDetails[prop];
+   }
      console.log(listDetails);
   for(keys in listDetails)
     console.log(keys);
@@ -58,8 +61,9 @@ function saveList(taskItem,taskTime,taskPriority,details){
  console.log( localStorage.getItem(a))
  let b=JSON.stringify(listVar)+JSON.stringify(listDetails);
  b=b.replace('}{',',');
+ b=b.replace(",}","}");
  console.log(b);
-localStorage.removeItem(a);
+ localStorage.removeItem((localStorage.mySession))
 
            // b=(JSON.parse(b));
           //  console.log(b);
