@@ -5,9 +5,27 @@ const log_out=document.querySelector("#log-out");
 console.log(log_out);
 log_out.addEventListener("click",loggingOut);
 
+//event listener to go the list 
+const selected_list=document.querySelectorAll("#List-items");
+
+/*
+selected_list.forEach(i=>{
+ i.addEventListener("click",ListView);
+
+})
+*/
+//selected_list[i].addEventListener("click",ListView);
+
+//stores the data for displaying the data on the next page
+
+function ListView(e){
+
+    console.log(e.target);
+
+}
 function loggingOut(e){
  // location.reload();
-
+e.stopPropagation();
  window.location.href="login.html";
 }
 
@@ -68,7 +86,7 @@ if(testprop===prop){
   new_task= document.createElement("div"); 
   new_task.classList="row";
   new_task.style="background-color: rgb(212, 212, 212) ;border:2px solid black;margin:2px;padding:2px"
-  
+ // addEventListener("click",ListView);
       new_column=document.createElement("div");
       new_column.classList="column";
       new_h2=document.createElement("h2");
@@ -99,6 +117,7 @@ if(testprop===prop){
    
               new_column.append(new_h2);
               new_task.append(new_column);
+              addEventListener("click",ListView);
               document.body.append(new_task);
 
       
