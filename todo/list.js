@@ -2,12 +2,18 @@ const date_p=document.querySelector("#date-p");
 document.querySelector(".user-id").innerHTML=localStorage.getItem('mySession');
 
 const log_out=document.querySelector("#log-out");
-console.log(log_out);
+//console.log(log_out);
 log_out.addEventListener("click",loggingOut);
 
 //event listener to go the list 
 const selected_list=document.querySelectorAll("#List-items");
 
+const user_id=document.querySelector(".user-id");
+user_id.addEventListener("click",editDetails);
+
+function editDetails(e){
+      window.location.href="editDetails.html";
+}
 /*
 selected_list.forEach(i=>{
  i.addEventListener("click",ListView);
@@ -53,7 +59,7 @@ console.log(date_p.innerHTML);
 
     }
 
-    console.log(localStorage.getItem("mySession"));
+  //  console.log(localStorage.getItem("mySession"));
 
 //writing the lists dynamically
 
@@ -70,10 +76,10 @@ function todo(){
    // data=JSON.parse(data);
    // console.log(data);
 
-   console.log(g);
+   //console.log(g);
 
    e=localStorage.getItem(localStorage.mySession);
-   console.log(e);
+   //console.log(e);
 
   i=1;
 e=JSON.parse(e); 
@@ -132,6 +138,8 @@ if(testTask===prop){
 console.log(prop);
 console.log(e[prop]);
 i++;
+
+
 }
 }/*
 i=1;

@@ -80,6 +80,7 @@ function saveList(taskItem,taskTime,taskPriority,details){
     JSON.parse(localStorage.getItem(a)).push(details);
     */
 
+    window.location.reload();
 }
 
 

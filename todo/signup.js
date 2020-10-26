@@ -1,6 +1,6 @@
 const button=document.querySelector('button');
 
-console.log(button);
+//console.log(button);
 
 button.addEventListener("click",getFormData)
  let flag=0;
@@ -16,7 +16,8 @@ button.addEventListener("click",getFormData)
          validateForm();
 function validateForm(){
     let passRegex=/[a-zA-Z0-9$]/ig;
-    if(firstName.length==0||lastName.length==0){
+    let nameRegex=/[^A-Za-z]/ig;
+    if(firstName.length==0||lastName.length==0 ||nameRegex.test(firstName)==1 ||nameRegex.test(lastName)==1){
         alert("Invalid username/lastname");
       
     }
