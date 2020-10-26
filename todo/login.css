@@ -1,4 +1,6 @@
-
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
 label{
@@ -9,7 +11,8 @@ label{
 input{
     border: 1px solid black;
     height: 20px;
-    width:50%;
+    width:40%;
+    padding:3px;
 }
 
 div{

@@ -8,7 +8,7 @@ function editDetails(e){
         const email=document.getElementById("myForm").elements[2].value
         const password=document.getElementById("myForm").elements[3].value
 
-        console.log(password);
+       // console.log(password);
            c= localStorage.mySession;
           d= localStorage.getItem(c);
 console.log(d);
@@ -43,7 +43,7 @@ for(prop in d){
              
    }
 }
-console.log(d);
+//console.log(d);
 d=JSON.stringify(d);
 localStorage.setItem(localStorage.mySession,d)
     }

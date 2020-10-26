@@ -5,21 +5,21 @@
 
  c=localStorage.getItem(localStorage.mySession);
 
- console.log(c);
+ //console.log(c);
 d=localStorage.id_view;
-console.log(d);
+//console.log(d);
 c=JSON.parse(c);
-console.log(c);
+//console.log(c);
  for(prop in c){
      if(prop===d){
          
-         console.log(gh=c[prop]);
+         //console.log(gh=c[prop]);
          a=document.querySelector(".item1");
          a.innerHTML=c[prop];
-         console.log(a);
+         //console.log(a);
          s=prop[prop.length-1];
-            console.log(s);
-            console.log(c["tasktime"+s]);
+            //console.log(s);
+            //console.log(c["tasktime"+s]);
             a=document.querySelector(".item2");
          a.innerHTML=c["tasktime"+s];
 
@@ -27,26 +27,27 @@ console.log(c);
          a.innerHTML=c["Priority"+s];
 
                 
-            console.log(c["Priority"+s]);
+            //console.log(c["Priority"+s]);
 
             a=document.querySelector(".item5");
             a.innerHTML=c["details"+s];
-            console.log(c["details"+s]);
+            //console.log(c["details"+s]);
               
             let item_4=document.querySelector(".item4");
                 item_4.addEventListener("click",rename_list);
-
                 function rename_list(){
-                        c[d]=prompt("rename the list");
-                        document.querySelector('.item1').innerHTML=c[d];
-                }
+                    cd=prompt("rename the list");
+                    if(cd.length>1)
+                    c[d]=cd;
+                    document.querySelector('.item1').innerHTML=c[d];
+            }
             }
         }
-    // else console.log("something")
+    // else //console.log("something")
 
 
     j=document.querySelector(".go_back");
-console.log(j);
+//console.log(j);
 j.addEventListener("click",myscript)
 function myscript(){window.location.href="list.html"};
                

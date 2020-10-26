@@ -2,7 +2,7 @@ const date_p=document.querySelector("#date-p");
 document.querySelector(".user-id").innerHTML=localStorage.getItem('mySession');
 
 const log_out=document.querySelector("#log-out");
-//console.log(log_out);
+////console.log(log_out);
 log_out.addEventListener("click",loggingOut);
 
 //event listener to go the list 
@@ -26,7 +26,7 @@ selected_list.forEach(i=>{
 
 function ListView(e){
   let id_view;
-    console.log(id_view=e.target.parentElement.parentElement.id);//gives the id of the parent-parent element
+    //console.log(id_view=e.target.parentElement.parentElement.id);//gives the id of the parent-parent element
     //will store this info so this can be used on 
     //other pages
     localStorage.setItem("id_view",id_view);
@@ -42,12 +42,12 @@ e.stopPropagation();
 setInterval( function(){
     
 date_p.innerHTML=window.Date().slice(0,window.Date().indexOf('G'));
-console.log(date_p.innerHTML);
+//console.log(date_p.innerHTML);
 
 }
-    ,10000000)
+    ,1000)
 
-    console.log(date_p);
+    //console.log(date_p);
 
 
     const add_task=document.querySelector("#add-task");
@@ -59,7 +59,7 @@ console.log(date_p.innerHTML);
 
     }
 
-  //  console.log(localStorage.getItem("mySession"));
+  //  //console.log(localStorage.getItem("mySession"));
 
 //writing the lists dynamically
 
@@ -134,9 +134,9 @@ if(testTask===prop){
               document.body.append(new_task);
 
       
-    console.log(e["taskName"+i])
-console.log(prop);
-console.log(e[prop]);
+    //console.log(e["taskName"+i])
+//console.log(prop);
+//console.log(e[prop]);
 i++;
 
 
