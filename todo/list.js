@@ -57,12 +57,12 @@ date_p.innerHTML=window.Date().slice(0,window.Date().indexOf('G'));
     //console.log(date_p);
 
 
-    const add_task=document.querySelector("#add-task");
+    const add_task=document.querySelector(`#add-task`);
 
-    add_task.addEventListener("click",addList);
+    add_task.addEventListener(`click`,addList);
 
    function addList(e){
-    window.location.href="newlist.html";
+    window.location.href=`newlist.html`;
 
     }
 
@@ -92,8 +92,8 @@ function todo(){
 e=JSON.parse(e); 
 
 for(let prop in e){
-  testprop="tasktime";
-  testTask="taskName";
+  testprop=`tasktime`;
+  testTask=`taskName`;
   testTask=testTask+i;
 testprop=testprop+i; 
 //console.log(testprop);
@@ -101,43 +101,43 @@ testprop=testprop+i;
 if(testTask===prop){
     
   new_task= document.createElement("div"); 
-  new_task.classList="row";
-  new_task.id="taskName"+i+"";
+  new_task.classList=`row`;
+  new_task.id=`taskName`+i+``;
 
   //new_task.id="testprop"
   new_task.style="background-color: rgb(212, 212, 212) ;border:2px solid black;margin:2px;padding:2px"
   //new_task.addEventListener("click",ListView);
-      new_column=document.createElement("div");
-      new_column.classList="column";
-      new_h2=document.createElement("h2");
-      new_h2.innerHTML=e["tasktime"+i];//e[prop]-- for later
+      new_column=document.createElement(`div`);
+      new_column.classList=`column`;
+      new_h2=document.createElement(`h2`);
+      new_h2.innerHTML=e[`tasktime`+i];//e[prop]-- for later
       new_column.append(new_h2);
       new_task.append(new_column);
       document.body.append(new_task);
 
                     //for the taskname
-              new_column=document.createElement("div");
-              new_column.classList="column";
-              new_h2=document.createElement("h2");
+              new_column=document.createElement(`div`);
+              new_column.classList=`column`;
+              new_h2=document.createElement(`h2`);
             
-                new_h2.innerHTML=e["taskName"+i];
+                new_h2.innerHTML=e[`taskName`+i];
               new_column.append(new_h2);
               new_task.append(new_column);
                 document.body.append(new_task);
       //for the checkbox
 
       
-            new_column=document.createElement("div");
-              new_column.classList="column";
-              new_column.style="text-align: right";
-              new_h2=document.createElement("input");
+            new_column=document.createElement(`div`);
+              new_column.classList=`column`;
+              new_column.style=`text-align: right`;
+              new_h2=document.createElement(`input`);
           
-              new_h2.type="checkbox";
-             new_h2.style="width:75%;height:75%;  margin:10px 10px 10px 10px;text-align: right; "> 
+              new_h2.type=`checkbox`;
+             new_h2.style=`width:75%;height:75%;  margin:10px 10px 10px 10px;text-align: right; `> 
    
               new_column.append(new_h2);
               new_task.append(new_column);
-             new_task.addEventListener("click",ListView);
+             new_task.addEventListener(`click`,ListView);
               document.body.append(new_task);
 
       

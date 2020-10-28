@@ -2,15 +2,15 @@ const button=document.querySelector('button');
 
 //console.log(button);
 
-button.addEventListener("click",getFormData)
+button.addEventListener(`click`,getFormData)
  let flag=0;
  function getFormData(e){
 
      console.log(e);
-     const firstName=document.getElementById("myForm").elements[0].value;
-     const lastName=document.getElementById("myForm").elements[1].value;
-     const email=document.getElementById("myForm").elements[2].value;
-     const password=document.getElementById("myForm").elements[3].value;
+     const firstName=document.getElementById(`myForm`).elements[0].value;
+     const lastName=document.getElementById(`myForm`).elements[1].value;
+     const email=document.getElementById(`myForm`).elements[2].value;
+     const password=document.getElementById(`myForm`).elements[3].value;
      console.log(password)
      console.log(firstName);
          validateForm();
@@ -18,16 +18,16 @@ function validateForm(){
     let passRegex=/[a-zA-Z0-9$]/ig;
     let nameRegex=/[^A-Za-z]/ig;
     if(firstName.length==0||lastName.length==0 ||nameRegex.test(firstName)==1 ||nameRegex.test(lastName)==1){
-        alert("Invalid username/lastname");
+        alert(`Invalid username/lastname`);
       
     }
     else if(email.split('@')<2 && email.split('.com')<2){
-        alert("Invalid email address");
+        alert(`Invalid email address`);
       
     }
     else if((password.match(passRegex)).length<8)
         {
-            alert("invalid password");
+            alert(`invalid password`);
             
         }
         else  flag=1;
@@ -42,12 +42,12 @@ let person = {
     listCount:0,
 };
 if(flag==1){
-    let user="user"+""+firstName+Math.floor(Math.random()*999)
+    let user=`user`+``+firstName+Math.floor(Math.random()*999)
 localStorage.setItem(user, JSON.stringify(person));
 console.log(user);
-alert("your username is:"+user);
+alert(`your username is:`+user);
 
-    window.location.href="login.html";
+    window.location.href=`login.html`;
  }
 }
 
