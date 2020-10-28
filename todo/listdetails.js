@@ -1,12 +1,12 @@
 
 
- const taskName=document.querySelector(".item1");
+  ///taskName=document.querySelector(".grid-container");
  //id_view has the id of the list 
 
- c=localStorage.getItem(localStorage.mySession);
+ let c=localStorage.getItem(localStorage.mySession);
 
  //console.log(c);
-d=localStorage.id_view;
+ const d=localStorage.id_view;
 //console.log(d);
 c=JSON.parse(c);
 //console.log(c);
@@ -45,11 +45,13 @@ c=JSON.parse(c);
         }
     // else //console.log("something")
 
-
+  
     j=document.querySelector(".go_back");
 //console.log(j);
 j.addEventListener("click",myscript)
-function myscript(){window.location.href="list.html"};
+function myscript(){
+   // window.localStorage.removeItem('id_view');
+    window.location.href="list.html"};
                
     
   

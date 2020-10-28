@@ -25,12 +25,19 @@ selected_list.forEach(i=>{
 //stores the data for displaying the data on the next page
 
 function ListView(e){
-  let id_view;
-    //console.log(id_view=e.target.parentElement.parentElement.id);//gives the id of the parent-parent element
+   
+    //id_view=e.target.parentElement.parentElement.id//gives the id of the parent-parent element
     //will store this info so this can be used on 
     //other pages
-    localStorage.setItem("id_view",id_view);
-    window.location.href="listdetails.html";
+    
+    id_view=e.target.parentElement.id;
+    //console.log(id_view);
+   // console.log(id_view.length);
+    if(id_view.length==0 ) id_view=e.target.parentElement.parentElement.id;
+   // console.log(id_view);
+  //  console.log(id_view);
+   localStorage.setItem("id_view",id_view);
+  window.location.href="listdetails.html";
 
 }
 function loggingOut(e){
@@ -99,7 +106,7 @@ if(testTask===prop){
 
   //new_task.id="testprop"
   new_task.style="background-color: rgb(212, 212, 212) ;border:2px solid black;margin:2px;padding:2px"
-  new_task.addEventListener("click",ListView);
+  //new_task.addEventListener("click",ListView);
       new_column=document.createElement("div");
       new_column.classList="column";
       new_h2=document.createElement("h2");
@@ -130,7 +137,7 @@ if(testTask===prop){
    
               new_column.append(new_h2);
               new_task.append(new_column);
-            //  addEventListener("click",ListView);
+             new_task.addEventListener("click",ListView);
               document.body.append(new_task);
 
       
